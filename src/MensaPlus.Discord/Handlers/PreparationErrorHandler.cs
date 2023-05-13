@@ -1,6 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
+using Remora.Discord.API.Abstractions.Objects;
 using Remora.Discord.Commands.Contexts;
 using Remora.Discord.Commands.Feedback.Services;
 using Remora.Discord.Commands.Services;
@@ -32,6 +33,7 @@ public sealed class PreparationErrorHandler : IPreparationErrorEvent
             ``{error.GetType().Name}``
             > *{error.Message}*
             """,
+            options: new(MessageFlags: MessageFlags.Ephemeral),
             ct: ct);
     }
 }
