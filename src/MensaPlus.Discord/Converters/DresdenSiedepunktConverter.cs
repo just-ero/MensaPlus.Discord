@@ -1,10 +1,9 @@
-﻿using System.Collections.Generic;
-using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Text.RegularExpressions;
 
-using OpenMensa.Models;
 using Humanizer;
+
+using OpenMensa.Models;
 
 namespace MensaPlus.Discord.Converters;
 

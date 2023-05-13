@@ -18,7 +18,6 @@ namespace MensaPlus.Discord.Extensions;
 
 internal static class MemoryCacheExtensions
 {
-
     public static async Task<Result<IEnumerable<Canteen>>> GetCanteensAsync(
         this IMemoryCache cache,
         OpenMensaApi openMensa,
